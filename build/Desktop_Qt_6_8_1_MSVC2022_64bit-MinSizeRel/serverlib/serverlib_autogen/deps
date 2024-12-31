@@ -1,0 +1,7 @@
+serverlib_autogen/timestamp: \
+	C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/.qtc/package-manager/auto-setup.cmake \
+	C:/dev/fun/untitled1/serverlib/CMakeLists.txt \
+	C:/dev/fun/untitled1/serverlib/serverlib.cpp \
+	C:/dev/fun/untitled1/serverlib/serverlib.h \
+	C:/dev/fun/untitled1/serverlib/serverlib_global.h \
+	C:/Qt/Tools/CMake_64/bin/cmake.exe

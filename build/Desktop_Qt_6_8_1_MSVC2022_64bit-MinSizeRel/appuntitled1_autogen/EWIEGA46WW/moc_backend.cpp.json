@@ -1,0 +1,51 @@
+{
+    "classes": [
+        {
+            "className": "backend",
+            "lineNumber": 7,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 0,
+                    "name": "logList",
+                    "notify": "logListChanged",
+                    "read": "logList",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QStringList",
+                    "user": false,
+                    "write": "setLogList"
+                }
+            ],
+            "qualifiedClassName": "backend",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "logListChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "callMe",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "backend.h",
+    "outputRevision": 68
+}

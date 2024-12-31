@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "RenderThread",
+            "lineNumber": 6,
+            "object": true,
+            "qualifiedClassName": "RenderThread",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QThread"
+                }
+            ]
+        }
+    ],
+    "inputFile": "renderthread.h",
+    "outputRevision": 68
+}
