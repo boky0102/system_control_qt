@@ -1235,6 +1235,12 @@
 			null
 		],
 		[
+			"C:/dev/fun/untitled1/mouse.h",
+			"MU",
+			"EWIEGA46WW/moc_mouse.cpp",
+			null
+		],
+		[
 			"C:/dev/fun/untitled1/serverworker.h",
 			"MU",
 			"EWIEGA46WW/moc_serverworker.cpp",
@@ -1329,6 +1335,7 @@
 	[
 		[ "C:/dev/fun/untitled1/backend.cpp", "MU", null ],
 		[ "C:/dev/fun/untitled1/main.cpp", "MU", null ],
+		[ "C:/dev/fun/untitled1/mouse.cpp", "MU", null ],
 		[ "C:/dev/fun/untitled1/serverworker.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

@@ -5,18 +5,21 @@
 #include <backend.h>
 #include <QWebSocketServer>
 
-class ServerWorker : public QThread
+class ServerWorker : public QObject
 {
     Q_OBJECT
 public:
-    ServerWorker(backend *backend);
+    explicit ServerWorker(backend *backend, QObject* parent = nullptr);
 
-    void run() override;
-    void stopServing();
+public slots:
+    void startServer();
 private slots:
     void onNewConnection();
+    void handleMessage(QString message);
+    void handleSocketDisconnect();
 private:
     backend* m_backend;
+    QWebSocketServer* m_server;
 };
 
 #endif // SERVERWORKER_H

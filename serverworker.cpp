@@ -1,42 +1,63 @@
 #include "serverworker.h"
 #include <QWebSocketServer>
 #include <QDebug>
+#include <QObject>
+#include <QWebSocket>
+#include <mouse.h>
 
-ServerWorker::ServerWorker(backend *backend)
+ServerWorker::ServerWorker(backend *backend, QObject *parent) :
+    QObject(parent)
 {
     m_backend = backend;
 }
 
-void ServerWorker::run()
+void ServerWorker::startServer()
 {
-    m_backend->pushLog("Trying to start local socket server");
+
+
     QThread::sleep(1);
-
-    auto server = QWebSocketServer("", QWebSocketServer::SslMode::NonSecureMode);
-    bool listening = server.listen(QHostAddress::Any);
-
-    if(listening){
-        m_backend->pushLog("Scoket server started succesfully");
-        auto serverAddress = server.serverAddress();
-        auto serverPort = server.serverPort();
-        QThread::sleep(1);
-        if(serverAddress == QHostAddress::Null){
-            m_backend->pushLog("Failed to create socket server");
-        }
-        m_backend->pushLog("Socket server is listening on address: " + serverAddress.toString());
-        QThread::sleep(std::chrono::nanoseconds(100000));
-        m_backend->pushLog("Socket server is listening on port :" + QString::number(serverPort));
+    m_server = new QWebSocketServer("", QWebSocketServer::SslMode::NonSecureMode);
+    QObject::connect(m_server, &QWebSocketServer::newConnection, this, &ServerWorker::onNewConnection);
+    m_backend->pushLog("Trying to start socket server");
+    if(!m_server->listen(QHostAddress::Any, 3003)){
+        m_backend->pushLog("Server failed to start");
+        return;
     }
+    QThread::sleep(1);
+    auto serverAddress = m_server->serverAddress();
+    auto serverPort = m_server->serverPort();
+
+    m_backend->pushLog("Server is running on " + serverAddress.toString() + ":" + QString::number(serverPort));
 }
 
 void ServerWorker::onNewConnection()
 {
+    QWebSocket *pSocket = m_server->nextPendingConnection();
+    if(pSocket == nullptr){
+        m_backend->pushLog("New connection can't be established");
+        return;
+    }
 
+    m_backend->pushLog("Socket connection established");
+
+    QObject::connect(pSocket, &QWebSocket::textMessageReceived, this, &ServerWorker::handleMessage);
+    QObject::connect(pSocket, &QWebSocket::disconnected, this, &ServerWorker::handleSocketDisconnect);
 }
 
-// void ServerWorker::stopServing()
-// {
-//     server.close();
-//     qDebug() << "Server closed";
-//     m_backend->pushLog("Server is closed");
-// }
+
+
+void ServerWorker::handleMessage(QString message)
+{
+    m_backend->pushLog("Recieved data on socket : " + message);
+
+    auto strings = message.split("/");
+    int x = strings[0].toInt();
+    int y = strings[1].toInt();
+    Mouse::MoveCursor(x, y);
+}
+
+void ServerWorker::handleSocketDisconnect()
+{
+    m_backend->pushLog("Disconnected socket");
+}
+

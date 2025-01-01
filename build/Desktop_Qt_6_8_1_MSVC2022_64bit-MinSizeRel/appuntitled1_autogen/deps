@@ -1080,6 +1080,8 @@ appuntitled1_autogen/timestamp: \
 	C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/CMakeFiles/3.29.3/CMakeRCCompiler.cmake \
 	C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/CMakeFiles/3.29.3/CMakeSystem.cmake \
 	C:/dev/fun/untitled1/main.cpp \
+	C:/dev/fun/untitled1/mouse.cpp \
+	C:/dev/fun/untitled1/mouse.h \
 	C:/dev/fun/untitled1/serverworker.cpp \
 	C:/dev/fun/untitled1/serverworker.h \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

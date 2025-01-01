@@ -19,6 +19,7 @@ qt_add_qml_module(appuntitled1
         Main.qml
         SOURCES backend.h backend.cpp
         SOURCES serverworker.h serverworker.cpp
+        SOURCES mouse.h mouse.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -44,4 +45,3 @@ install(TARGETS appuntitled1
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
-add_subdirectory(serverlib)

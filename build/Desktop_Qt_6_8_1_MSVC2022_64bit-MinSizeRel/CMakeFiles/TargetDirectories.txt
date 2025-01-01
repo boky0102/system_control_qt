@@ -18,11 +18,3 @@ C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/CMakeFiles
 C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/CMakeFiles/install/local.dir
 C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/CMakeFiles/appuntitled1_autogen_timestamp_deps.dir
 C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/CMakeFiles/appuntitled1_autogen.dir
-C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/serverlib/CMakeFiles/serverlib.dir
-C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/serverlib/CMakeFiles/edit_cache.dir
-C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/serverlib/CMakeFiles/rebuild_cache.dir
-C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/serverlib/CMakeFiles/list_install_components.dir
-C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/serverlib/CMakeFiles/install.dir
-C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/serverlib/CMakeFiles/install/local.dir
-C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/serverlib/CMakeFiles/serverlib_autogen_timestamp_deps.dir
-C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/serverlib/CMakeFiles/serverlib_autogen.dir
