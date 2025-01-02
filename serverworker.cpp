@@ -4,6 +4,8 @@
 #include <QObject>
 #include <QWebSocket>
 #include <mouse.h>
+#include <keyboard.h>
+#include <QProcess>
 
 ServerWorker::ServerWorker(backend *backend, QObject *parent) :
     QObject(parent)
@@ -48,16 +50,71 @@ void ServerWorker::onNewConnection()
 
 void ServerWorker::handleMessage(QString message)
 {
-    m_backend->pushLog("Recieved data on socket : " + message);
+    qDebug() << message;
+    auto strings = message.split("!");
+    QChar msgType = strings[0][0];
+    auto msg = strings[1];
 
-    auto strings = message.split("/");
-    int x = strings[0].toInt();
-    int y = strings[1].toInt();
-    Mouse::MoveCursor(x, y);
+    switch(msgType.unicode()){
+        case MsgType::MOUSE_MOV:
+            handleMouseMove(msg);
+            break;
+        case MsgType::MOUSE_DOUBLE_CLICK:
+            handleMosueDoubleClikc(msg);
+            break;
+        case MsgType::MOUSE_CLICK:
+            handleMosueClick(msg);
+            break;
+        case MsgType::VOLUME:
+            handleVolumeChange(msg);
+            break;
+        case MsgType::SHUTDOWN:
+            handleShutDown(msg);
+            break;
+    }
 }
 
 void ServerWorker::handleSocketDisconnect()
 {
     m_backend->pushLog("Disconnected socket");
+}
+
+void ServerWorker::handleMouseMove(QString &message)
+{
+    auto data = message.split("/");
+    if(data.size() != 2){
+        m_backend->pushLog("Wrong data format for mouse movement recieved");
+    }
+
+    auto x = data[0].toInt();
+    auto y = data[1].toInt();
+
+    Mouse::MoveCursor(x, y);
+}
+
+void ServerWorker::handleMosueClick(QString &message)
+{
+    Mouse::Click();
+}
+
+void ServerWorker::handleMosueDoubleClikc(QString &message)
+{
+    Mouse::Click();
+    Mouse::Click();
+}
+
+void ServerWorker::handleVolumeChange(QString &message)
+{
+    if(message == "u"){
+        Keyboard::VolumeChange(true);
+    }else{
+        Keyboard::VolumeChange(false);
+    }
+
+}
+
+void ServerWorker::handleShutDown(QString &message)
+{
+    QProcess::execute("shutdown", {"/s"});
 }
 

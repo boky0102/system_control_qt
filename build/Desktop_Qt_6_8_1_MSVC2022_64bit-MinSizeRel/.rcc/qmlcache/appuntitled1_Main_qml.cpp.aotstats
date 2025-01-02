@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 28,
+                        "durationMicroseconds": 26,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
                         "line": 17
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 179,
+                        "durationMicroseconds": 185,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 22
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 45,
+                        "durationMicroseconds": 43,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 21
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 491,
+                        "durationMicroseconds": 495,
                         "errorMessage": "Cannot access value for name backend",
                         "functionName": "model",
                         "line": 34
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 86,
+                        "durationMicroseconds": 84,
                         "errorMessage": "",
                         "functionName": "onCountChanged",
                         "line": 40
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 32,
+                        "durationMicroseconds": 33,
                         "errorMessage": "",
                         "functionName": "onCountChanged",
                         "line": 40
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 23,
-                        "durationMicroseconds": 291,
+                        "durationMicroseconds": 284,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 36

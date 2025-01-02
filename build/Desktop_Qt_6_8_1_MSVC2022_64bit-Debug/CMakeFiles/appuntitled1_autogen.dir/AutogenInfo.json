@@ -1204,6 +1204,16 @@
 		"C:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2Targets-relwithdebinfo.cmake",
 		"C:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2AdditionalTargetInfo.cmake",
 		"C:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2VersionlessAliasTargets.cmake",
+		"C:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6WebSockets/Qt6WebSocketsConfigVersion.cmake",
+		"C:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6WebSockets/Qt6WebSocketsConfigVersionImpl.cmake",
+		"C:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6WebSockets/Qt6WebSocketsConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6WebSockets/Qt6WebSocketsDependencies.cmake",
+		"C:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6WebSockets/Qt6WebSocketsTargets.cmake",
+		"C:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6WebSockets/Qt6WebSocketsTargets-debug.cmake",
+		"C:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6WebSockets/Qt6WebSocketsTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6WebSockets/Qt6WebSocketsAdditionalTargetInfo.cmake",
+		"C:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6WebSockets/Qt6WebSocketsVersionlessAliasTargets.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
 		"C:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"C:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
@@ -1225,15 +1235,27 @@
 			null
 		],
 		[
-			"C:/dev/fun/untitled1/renderthread.h",
+			"C:/dev/fun/untitled1/keyboard.h",
 			"MU",
-			"EWIEGA46WW/moc_renderthread.cpp",
+			"EWIEGA46WW/moc_keyboard.cpp",
 			null
 		],
 		[
-			"C:/dev/fun/untitled1/testobject.h",
+			"C:/dev/fun/untitled1/mouse.h",
 			"MU",
-			"EWIEGA46WW/moc_testobject.cpp",
+			"EWIEGA46WW/moc_mouse.cpp",
+			null
+		],
+		[
+			"C:/dev/fun/untitled1/serverworker.h",
+			"MU",
+			"EWIEGA46WW/moc_serverworker.cpp",
+			null
+		],
+		[
+			"C:/dev/fun/untitled1/webclientworker.h",
+			"MU",
+			"EWIEGA46WW/moc_webclientworker.cpp",
 			null
 		]
 	],
@@ -1253,6 +1275,7 @@
 		"QT_QML_LIB",
 		"QT_QUICKCONTROLS2_LIB",
 		"QT_QUICK_LIB",
+		"QT_WEBSOCKETS_LIB",
 		"UNICODE",
 		"WIN32",
 		"WIN64",
@@ -1286,7 +1309,8 @@
 		"C:/Qt/6.8.1/msvc2022_64/include/QtQmlModels",
 		"C:/Qt/6.8.1/msvc2022_64/include/QtQmlWorkerScript",
 		"C:/Qt/6.8.1/msvc2022_64/include/QtOpenGL",
-		"C:/Qt/6.8.1/msvc2022_64/include/QtQuickControls2"
+		"C:/Qt/6.8.1/msvc2022_64/include/QtQuickControls2",
+		"C:/Qt/6.8.1/msvc2022_64/include/QtWebSockets"
 	],
 	"MOC_MACRO_NAMES" : 
 	[
@@ -1321,9 +1345,11 @@
 	"SOURCES" : 
 	[
 		[ "C:/dev/fun/untitled1/backend.cpp", "MU", null ],
+		[ "C:/dev/fun/untitled1/keyboard.cpp", "MU", null ],
 		[ "C:/dev/fun/untitled1/main.cpp", "MU", null ],
-		[ "C:/dev/fun/untitled1/renderthread.cpp", "MU", null ],
-		[ "C:/dev/fun/untitled1/testobject.cpp", "MU", null ]
+		[ "C:/dev/fun/untitled1/mouse.cpp", "MU", null ],
+		[ "C:/dev/fun/untitled1/serverworker.cpp", "MU", null ],
+		[ "C:/dev/fun/untitled1/webclientworker.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -54,7 +54,7 @@
         "classes": [
             {
                 "className": "ServerWorker",
-                "lineNumber": 8,
+                "lineNumber": 17,
                 "object": true,
                 "qualifiedClassName": "ServerWorker",
                 "slots": [

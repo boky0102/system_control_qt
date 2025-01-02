@@ -4,7 +4,7 @@
 
 backend::backend(QObject *parent)
     : QObject{parent},
-    m_logList{"A", "B", "C"}
+    m_logList{}
 {
     qDebug() << "State created";
 }

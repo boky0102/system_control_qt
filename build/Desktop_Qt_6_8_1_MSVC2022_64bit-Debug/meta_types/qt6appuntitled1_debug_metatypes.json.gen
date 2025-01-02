@@ -53,10 +53,42 @@
     {
         "classes": [
             {
-                "className": "TestObject",
-                "lineNumber": 7,
+                "className": "ServerWorker",
+                "lineNumber": 18,
                 "object": true,
-                "qualifiedClassName": "TestObject",
+                "qualifiedClassName": "ServerWorker",
+                "slots": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "startServer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 1,
+                        "name": "onNewConnection",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "handleMessage",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 3,
+                        "name": "handleSocketDisconnect",
+                        "returnType": "void"
+                    }
+                ],
                 "superClasses": [
                     {
                         "access": "public",
@@ -65,7 +97,7 @@
                 ]
             }
         ],
-        "inputFile": "testobject.h",
+        "inputFile": "serverworker.h",
         "outputRevision": 68
     }
 ]

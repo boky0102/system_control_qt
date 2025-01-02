@@ -20,6 +20,8 @@ qt_add_qml_module(appuntitled1
         SOURCES backend.h backend.cpp
         SOURCES serverworker.h serverworker.cpp
         SOURCES mouse.h mouse.cpp
+        SOURCES keyboard.h keyboard.cpp
+        SOURCES webclientworker.h webclientworker.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
