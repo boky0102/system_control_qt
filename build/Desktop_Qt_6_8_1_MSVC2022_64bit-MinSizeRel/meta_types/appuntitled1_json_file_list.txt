@@ -1,2 +1,0 @@
-C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/appuntitled1_autogen/include/../EWIEGA46WW/moc_backend.cpp.json
-C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-MinSizeRel/appuntitled1_autogen/include/../EWIEGA46WW/moc_serverworker.cpp.json

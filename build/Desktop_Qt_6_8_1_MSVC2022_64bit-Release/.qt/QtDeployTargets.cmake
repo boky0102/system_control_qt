@@ -1,3 +1,0 @@
-set(__QT_DEPLOY_TARGET_appuntitled1_FILE C:/dev/fun/untitled1/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/appuntitled1.exe)
-set(__QT_DEPLOY_TARGET_appuntitled1_TYPE EXECUTABLE)
-set(__QT_DEPLOY_TARGET_appuntitled1_RUNTIME_DLLS C:/Qt/6.8.1/msvc2022_64/bin/Qt6QuickControls2.dll;C:/Qt/6.8.1/msvc2022_64/bin/Qt6WebSockets.dll;C:/Qt/6.8.1/msvc2022_64/bin/Qt6QuickTemplates2.dll;C:/Qt/6.8.1/msvc2022_64/bin/Qt6Quick.dll;C:/Qt/6.8.1/msvc2022_64/bin/Qt6QmlMeta.dll;C:/Qt/6.8.1/msvc2022_64/bin/Qt6QmlWorkerScript.dll;C:/Qt/6.8.1/msvc2022_64/bin/Qt6OpenGL.dll;C:/Qt/6.8.1/msvc2022_64/bin/Qt6Gui.dll;C:/Qt/6.8.1/msvc2022_64/bin/Qt6QmlModels.dll;C:/Qt/6.8.1/msvc2022_64/bin/Qt6Qml.dll;C:/Qt/6.8.1/msvc2022_64/bin/Qt6Network.dll;C:/Qt/6.8.1/msvc2022_64/bin/Qt6Core.dll)
